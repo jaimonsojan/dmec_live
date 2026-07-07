@@ -14,6 +14,21 @@ export default function Contact({ theme }: ContactProps) {
   const [visibleCount, setVisibleCount] = useState(3);
 
   useEffect(() => {
+    const handlePrefill = (e: Event) => {
+      const customEvent = e as CustomEvent<{ category: string; message: string }>;
+      if (customEvent.detail) {
+        setForm(prev => ({
+          ...prev,
+          category: customEvent.detail.category || 'waste',
+          message: customEvent.detail.message || ''
+        }));
+      }
+    };
+    window.addEventListener('dime-prefill-spec', handlePrefill);
+    return () => window.removeEventListener('dime-prefill-spec', handlePrefill);
+  }, []);
+
+  useEffect(() => {
     const updateCount = () => {
       if (window.innerWidth < 768) {
         setVisibleCount(1);
