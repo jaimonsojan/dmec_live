@@ -8,14 +8,14 @@ import {
 
 // Highly-curated high-resolution industrial Unsplash images matching each category
 const CATEGORY_IMAGES: Record<string, string> = {
-  waste: 'https://images.unsplash.com/photo-1614056079979-31ff5920a672?auto=format&fit=crop&w=1200&q=80', // Heavy-duty waste/metal container
-  transport: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=80', // Commercial flatbed trailer transport
-  liquid: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80', // Heavy liquid/industrial tanks
-  fuel: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80', // Fuel storage & pressure valves
-  access: 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80', // Steel scaffolding & structural access
-  emergency: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80', // Hydraulic machinery / breakdown crane profile
-  site: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80', // Modular prefab cabin steel welding environment
-  safety: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80' // Safety signs & yellow protection gear on site
+  waste: 'https://dimedoha.com/DMEC/waste_management.jpg', // Heavy-duty waste/metal container
+  transport: 'https://dimedoha.com/DMEC/transport.jpg', // Commercial flatbed trailer transport
+  liquid: 'https://dimedoha.com/DMEC/liquid.jpg', // Heavy liquid/industrial tanks
+  fuel: 'https://dimedoha.com/DMEC/fuel storage.jpg', // Fuel storage & pressure valves
+  access: 'https://dimedoha.com/DMEC/access.jpg', // Steel scaffolding & structural access
+  emergency: 'https://dimedoha.com/DMEC/emergency.jpg', // Hydraulic machinery / breakdown crane profile
+  site: 'https://dimedoha.com/DMEC/site.jpg', // Modular prefab cabin steel welding environment
+  safety: 'https://dimedoha.com/DMEC/safety.jpg' // Safety signs & yellow protection gear on site
 };
 
 // Map icon name from string to Lucide Icon component
